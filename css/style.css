@@ -15,10 +15,6 @@
     color: black;
 }
 
-.header_box .header_box {
-    border: 2px dashed red;
-}
-
 
 a {
     text-decoration: none;
@@ -28,14 +24,17 @@ a {
 
 .inner_box {
     padding: 30px;
-    position: relative;
+    
 }
 
-.art-item { 
-    position: absolute;
-    left: 50%;
-    translate: -50%;
+.inner_title_box {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .art-item .star {
     padding: 25px 40px;
@@ -46,7 +45,7 @@ a {
     width: 150px;
     background-color: white;
     border-radius: 1px;
-    align-self: center;
+    align-self: center; 
 }
 
 
@@ -57,12 +56,24 @@ header .header_box ul li a {
     padding: 10px;
 }
 
+header .header_box .header_box {
+    height: 100%;
+}
+
+header .header_box .header_box ul {
+    height: 100%;
+}
+
+header .header_box .header_box ul > *{
+    align-self: center;
+}
+
 
 /* 
     MAIN
 */
 main .main_primary_box {
-    padding: 40px 0;
+    padding: 10px 0;
 }
 
 
@@ -84,12 +95,6 @@ footer .footer_bottom_box {
 
 
 
-
-
-
-
-
-
 /* 
     DEBUG
 */
@@ -101,9 +106,8 @@ footer .footer_bottom_box {
 .debug .header_box .header_box{
     border: 2px dashed darkblue;
     background-color:cadetblue;
-    padding: 30px 0
+    padding: 10px 0;
 }
-
 .debug .main_primary_box {
     border: 2px dashed darkred;
     background-color:rebeccapurple;
@@ -112,7 +116,6 @@ footer .footer_bottom_box {
 .debug .main_primary_box .main_primary_box{
     border: 2px dashed darkred;
     background-color:rebeccapurple;
-    padding: 200px 0;
 }
 
 .debug .main_secondary_box {
@@ -150,4 +153,12 @@ footer .footer_bottom_box {
 
 .debug a {
     border: 2px dashed yellow;
+}
+
+.debug .inner_box {
+    border: 4px dashed lime;
+}
+
+.debug .inner_title_box {
+    border: 4px dashed lime;
 }
