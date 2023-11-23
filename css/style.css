@@ -3,7 +3,7 @@
     GENERAL
 */
 .container {
-    max-width: 1200px;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
@@ -23,12 +23,12 @@ a {
 
 
 .inner_box {
-    padding: 30px;
+    padding: 10px 0;
     
 }
 
 .inner_title_box {
-    padding: 30px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,12 +52,18 @@ a {
 /* 
     HEADER
 */
+
+.header_box {
+    background-color: #2C3E50;
+}
+
 header .header_box ul li a {
     padding: 10px;
 }
 
 header .header_box .header_box {
     height: 100%;
+    padding: 10px 0;
 }
 
 header .header_box .header_box ul {
@@ -72,93 +78,156 @@ header .header_box .header_box ul > *{
 /* 
     MAIN
 */
+
 main .main_primary_box {
     padding: 10px 0;
+    background-color: #1ABC9C;
 }
 
 
 main .main_secondary_box {
-    padding: 40px 0;
+    padding: 20px 0;
 }
 
+
+
+
+.card_box {
+    margin: 10px;
+    width: calc((100% / 3) - 20px);
+    /* border: 2px dashed orangered; */
+    padding: 0;
+}
+
+.card_box > *{
+    width: 100%;
+    height: 100%;
+}
+
+.card_box > * > *{
+    width: 100%;
+    height: 100%;
+}
+
+main .main_secondary_box .art-item .line {
+    background-color: black;
+}
+
+main .main_primary_box .main_primary_box .row .offset-3:enabled {
+} 
 
 /* 
     FOOTER
 */
 footer .footer_top_box {
     padding: 40px 0;
+    background-color: #3A546D;
+}
+
+footer .footer_top_box .footer_top_box p a {
+    color: #1ABC9C  ;
 }
 
 footer .footer_bottom_box {
-    padding: 40px 0;
+    padding: 20px 0;
+    background-color: #2C3E50;
 }
 
+
+footer .footer_top_box > span {
+    padding: 8px;
+    margin: 0 10px;
+}
+
+
+/* 
+    MEDIA QUERY
+*/
+
+/*
+    MEDIA QUERY
+*/
+
+/* md*/
+@media screen and (max-width: 920px) {
+    main .container-md .main_secondary_box .card_box{
+        width: calc((100% / 2) - 20px);
+    }
+}
+
+/* sm */
+@media screen and (max-width: 760px) {
+    main .container-sm .main_secondary_box .card_box{
+        width: calc((100% / 1) - 20px);
+    }    
+}
 
 
 /* 
     DEBUG
 */
-.debug .header_box {
+/* .debug .header_box {
     border: 2px dashed darkblue;
     background-color:cadetblue;
-}
+} */
 
-.debug .header_box .header_box{
+/* .debug .header_box .header_box{
     border: 2px dashed darkblue;
     background-color:cadetblue;
-    padding: 10px 0;
-}
-.debug .main_primary_box {
+    
+} */
+/* .debug .main_primary_box {
     border: 2px dashed darkred;
     background-color:rebeccapurple;
-}
+} */
 
-.debug .main_primary_box .main_primary_box{
+/* .debug .main_primary_box .main_primary_box{
     border: 2px dashed darkred;
     background-color:rebeccapurple;
-}
+} */
 
-.debug .main_secondary_box {
+/* .debug .main_secondary_box {
     border: 2px dashed darkred;
     background-color:royalblue;
-}
+} */
 
-.debug .main_secondary_box .main_secondary_box {
+/* .debug .main_secondary_box .main_secondary_box {
     border: 2px dashed darkred;
     background-color:royalblue;
     padding: 200px 0;
-}
+} */
 
-.debug .footer_top_box {
+/* .debug .footer_top_box {
     border: 2px dashed darkblue;
     background-color:cadetblue;
-}
+} */
 
-.debug .footer_top_box .footer_top_box {
+/* .debug .footer_top_box .footer_top_box {
     border: 2px dashed darkblue;
     background-color:cadetblue;
     padding: 100px 0;
-}
+} */
 
-.debug .footer_bottom_box {
+/* .debug .footer_bottom_box {
     border: 2px dashed darkblue;;
     background-color:darkgreen;
-}
+} */
 
-.debug .footer_bottom_box .footer_bottom_box {
+/* .debug .footer_bottom_box .footer_bottom_box {
     border: 2px dashed darkblue;;
     background-color:darkgreen;
     padding: 30px 0;
-}
+} */
 
-.debug a {
+/* .debug a {
     border: 2px dashed yellow;
-}
+} */
 
-.debug .inner_box {
+/* .debug .inner_box {
     border: 4px dashed lime;
-}
+    padding: 20px;
+} */
 
-.debug .inner_title_box {
+/* .debug .inner_title_box {
     border: 4px dashed lime;
-}
+} */
